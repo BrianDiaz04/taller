@@ -41,10 +41,53 @@ footer{
     font-family: Roboto Condensed, Regular;
 
 }
-/*h1, h2{
+.subtitulo2{
+    color: #E20703;
+    margin-left: 10%;
+    margin-right: 35%;
+    font-size: 40px;
+    text-align: left;
+    font-family: Titillium web, Bold;
+
+}
+.subtitulo3{
+    color: #E20703;
+    margin-left: 10%;
+    margin-right: 35%;
+    font-size: 40px;
+    text-align: left;
+    font-family: Titillium web, Bold;
+
+}
+.subtitulo4{
+    color: #E20703;
+    margin-left: 55%;
+    margin-right: 5%;
+    font-size: 40px;
+    text-align: left;
+    font-family: Titillium web, Bold;
+
+}
+ p{
+    color: white;
+    font-size: 32px;
+    font-family: Titillium web, Bold;
+ }
+  h2{
+    color: white;
+    margin-left: 5%;
     text-align: left;
     font-family: Roboto Condensed, Bold;
-}*/
+    font-size: 55px;
+}
+.et1{
+    margin-left: 10%;
+    margin-right: 55%;
+}
+.et2{
+    margin-left: 55%;
+    margin-right: 5%;
+}
 @media screen and (max-width: 600px) {
     html, body{
         background-color: black;
