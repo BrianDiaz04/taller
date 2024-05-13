@@ -2,9 +2,85 @@ html{
     background-color: #0B0C0E;
     padding: 5px;
 }
+.grilla{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50px 650px 1140px 100px 450px 100px 440px 600px 200px;
+    grid-template-areas:
+    "header-area header-area header-area header-area"
+    "main-area main-area main-area main-area"
+    "beneficio-area beneficio-area beneficio-area beneficio-area"
+    ". . . ."
+    "com-area com-area com-area com-area"
+    ". . . ."
+    "icon-area icon-area icon-area icon-area"
+    "lv-area lv-area lv-area lv-area"
+    "footer-area footer-area footer-area footer-area"
+}
 .Beneficios{
     background-color: #101214;
+    background-image: url(./Imagenes/Vec.png);
+    background-position: right;
+    grid-area: beneficio-area;
 
+}
+
+.tarj1{
+ width: 900px;
+ height: 350px;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ padding: 20px;
+ border-radius: 0px 20px 20px 0px;
+ background-color: #090A0C;
+}
+.tarj1 img{
+    width: 150px;
+}
+.tarj1 h3{
+    color: #E20703;
+    font-size: 35px;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: 6%;
+    font-family: Titillium web, Bold;
+}
+.tarj1 p{
+    font-size: 24px;
+    margin-left: 25%;
+    margin-right: 0;
+}
+.tarj2{
+    width: 900px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #090A0C;
+    margin-top: 40px;
+    border-radius: 20px 0px 0px 20px;
+    margin-left: auto;
+   }
+   .tarj2 h3{
+       color: #E20703;
+       font-size: 35px;
+       text-align: left;
+       margin-bottom: 10px;
+       margin-left: 25%;
+       font-family: Titillium web, Bold;
+   }
+   .tarj2 p{
+       font-size: 24px;
+       margin-left: 32%;
+       margin-right: 0%;
+   }
+   .tarj2 img{
+    width: 150px;
 }
 .imagen1{
     width: 600px;
@@ -13,17 +89,54 @@ html{
     margin-left: 60%;
     margin-right: auto;
 }
-.sisi{
-    color: aliceblue;
+.val{
+    width: 398px;
+    height: 581px;
+    margin-top: -40%;
+    margin-left: 2%;
+    margin-right: auto;
+}
+.apex{
+    width: 500px;
+    height: 500px;
+    margin-top: -35%;
+    margin-left: 23%;
 }
 header{
+    background-color: #0A0B0D;
     color: white;
     text-align: left;
-    margin-top: 30px;
+    grid-area: header-area;
+}
+.main{
+    background-color: #0B0C0E;
+    grid-area: main-area;
+}
+.com{
+    background-color: #980A0A;
+    grid-area: com-area;
+}
+.icon{
+    background-color: #101214;
+    grid-area: icon-area;
+}
+.lv{
+    grid-area: lv-area;
+}
+.imagenfinal{
+    width: 867px;
+    height: 646px;
+    display: block;
+    margin-top: -25%;
+    margin-left: 35%;
+    margin-right: auto;
+
 }
 footer{
     /*text-align: left;*/
+    background-color: #101214;
     color:  white;
+    grid-area: footer-area;
 }
  .titulo1{
     margin-left: 10%;
@@ -33,21 +146,22 @@ footer{
     font-family: Roboto Condensed, Bold;
 
 }
+.titulo2{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 45%;
+    font-size: 64px;
+    text-align: left;
+    font-style: Bold;
+    font-family: Roboto Condensed, Bold;
+
+}
 .subtitulo1{
     margin-left: 10%;
     margin-right: 35%;
     font-size: 32px;
     text-align: left;
     font-family: Roboto Condensed, Regular;
-
-}
-.subtitulo2{
-    color: #E20703;
-    margin-left: 10%;
-    margin-right: 35%;
-    font-size: 40px;
-    text-align: left;
-    font-family: Titillium web, Bold;
 
 }
 .subtitulo3{
@@ -80,9 +194,25 @@ footer{
     font-family: Roboto Condensed, Bold;
     font-size: 55px;
 }
-.et1{
+.boton{
+    text-decoration: none;
+    background-color: #980A0A;
+    padding: 5px 5px;
+    color: white;
     margin-left: 10%;
-    margin-right: 55%;
+    text-align: left;
+    font-family: titillium web;
+    font-style: bold;
+    font-size: 24px;
+    border-radius: 5%;
+}
+h3{
+    color: white;
+    margin-left: 10%;
+    text-align: left;
+    font-family: titillium web;
+    font-style: bold;
+    font-size: 24px;
 }
 .et2{
     margin-left: 55%;
