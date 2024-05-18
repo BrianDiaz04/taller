@@ -11,18 +11,25 @@
  </head>
 <body> 
     <section class="grilla">
+        <!-- HEADER (BARRA SUPERIOR)-->
     <header>
         <img src="./Imagenes/lup.png" alt="LevelUp">
     </header>
 
+     <!-- Portada -->
     <div class="main">
-        <h3 class="subtitulo2">Encuesta</h3>
-        <p class="titulo1">¡Mantente al Día con tus juegos Favoritos! Únete para Recibir Noticias Exclusivas </p>
+        <div class="portada-izquierda">
+        <h3 class="subtitulo3">Encuesta</h3>
+        <h1 class="titulo1">¡Mantente al Día con tus juegos Favoritos! Únete para Recibir Noticias Exclusivas </h1>
         <p class="subtitulo1">Descubre Contenido Único, Personalizado y Verificado por nuestros Expertos. Recibe Actualizaciones Semanales según tus Gustos.</p>
         <a class="boton" href="./formulario.html">Unirse ahora</a>
+        </div>
+        <div class="portada-derecha">
         <img class="imagen1" src="./Imagenes/shad.png" alt="shadow">
+        </div>
     </div>
 
+    <!-- Beneficios -->
     <div class="Beneficios">
         <h2>Nuestros Beneficios</h2>
         <div class="tarj1">
@@ -30,6 +37,7 @@
         <p> Te vamos a proporcionar información actualizada y artículos chequeados por nuestros periodistas de confianza, para que te mantengas informado las 24hs acerca de cualquier juego.</p>
         </div>
         <img class="val" src="./Imagenes/val.png" alt="valorant">
+        
         <div class="tarj2">
         <h3 class="subtitulo4" >Artículos Adaptados a tus gustos</h3>
         <p class="et2"> Los artículos de información del género que desees, se enviaran semanalmente, y está misma será amoldada en base a tus gustos e intereses que selecciones dentro del formulario haciendo la experiencia aún mas personalizada.
@@ -39,18 +47,53 @@
     </div>
     
 
+    <!-- Comentarios -->
     <section class="com">
-          <h2>Comentarios</h2>
-         <p>“Ya no tengo que navegar entre miles de noticias, ahora tengo lo que me interesa al alcance de mi mano”</p>
-    </section>
+            <h2>Comentarios</h2>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="Imagenes/carru2.png" alt="Ilustracion">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagenes/carru1.png" alt="fotografia">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Imagenes/carru3.png" alt="pintura">
+                        <div class="carousel-caption">
+                            
+                            <p>Curso</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-buttons">
+                    <button id="prevBtn">❮</button>
+                    <button id="nextBtn">❯</button>
+                </div>
+                <div class="carousel-indicators">
+                    <button data-slide="0" class="active"></button>
+                    <button data-slide="1"></button>
+                    <button data-slide="2"></button>
+                </div>
+            </div>
+        </section>
+         <script src="./script.js"></script>
+    <!-- Bullets -->
     <div class="icon">
         <h1> Resumen </h1>
     </div>
+
+    <!-- Boton final -->
     <div class="lv">
-        <p class="titulo2"> Entérate las ultimas novedades aquí y ahora!!</p>
+        <h1 class="titulo2"> Entérate las ultimas novedades aquí y ahora!!</h1>
         <a class="boton" href="./formulario.html">¡¡Vamos!!</a>
         <img class="imagenfinal" src="./Imagenes/had.png" alt="Hades"> 
     </div>
+
+
+    <!-- Footer -->
     <footer>
     <p class="titulo1"> Level up</p>
     </footer>

@@ -1,6 +1,7 @@
 html{
     background-color: #0B0C0E;
-    padding: 5px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 .grilla{
     background-color: antiquewhite;
@@ -8,7 +9,7 @@ html{
     height: 100vh;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 50px 650px 1140px 100px 450px 100px 440px 600px 200px;
+    grid-template-rows: 50px 650px 1000px 100px 450px 100px 440px 600px 200px;
     grid-template-areas:
     "header-area header-area header-area header-area"
     "main-area main-area main-area main-area"
@@ -20,12 +21,13 @@ html{
     "lv-area lv-area lv-area lv-area"
     "footer-area footer-area footer-area footer-area"
 }
+
 .Beneficios{
     background-color: #101214;
+    width: 100%;
     background-image: url(./Imagenes/Vec.png);
     background-position: right;
     grid-area: beneficio-area;
-
 }
 
 .tarj1{
@@ -62,7 +64,7 @@ html{
     flex-direction: column;
     padding: 20px;
     background-color: #090A0C;
-    margin-top: 40px;
+    /*margin-top: 40px;*/
     border-radius: 20px 0px 0px 20px;
     margin-left: auto;
    }
@@ -88,6 +90,7 @@ html{
     margin-top: -40%;
     margin-left: 60%;
     margin-right: auto;
+    grid-area: main-area;
 }
 .val{
     width: 398px;
@@ -116,6 +119,63 @@ header{
     background-color: #980A0A;
     grid-area: com-area;
 }
+/* Carrusel comentarios*/
+
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    grid-area: com-area;
+}
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+.carousel-item img {
+    width: 100%;
+    vertical-align: top;
+}
+.carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.carousel-buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: -110px;
+}
+.carousel-indicators button {
+    background-color: gray;
+    border: none;
+    padding: 5px;
+    margin: 0 2px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.carousel-indicators button.active {
+    background-color: white;
+}
+
+
 .icon{
     background-color: #101214;
     grid-area: icon-area;
@@ -138,7 +198,14 @@ footer{
     color:  white;
     grid-area: footer-area;
 }
+
+div.portada-izquierda {
+  margin-right: 10rem;
+  padding-top: 10px;
+}
+
  .titulo1{
+    color: white;
     margin-left: 10%;
     margin-right: 35%;
     font-size: 64px;
@@ -146,13 +213,14 @@ footer{
     font-family: Roboto Condensed, Bold;
 
 }
+
 .titulo2{
+    color: white;
     display: flex;
     margin-left: 10%;
     margin-right: 45%;
     font-size: 64px;
     text-align: left;
-    font-style: Bold;
     font-family: Roboto Condensed, Bold;
 
 }
@@ -162,7 +230,7 @@ footer{
     font-size: 32px;
     text-align: left;
     font-family: Roboto Condensed, Regular;
-
+    margin-top: -35px;
 }
 .subtitulo3{
     color: #E20703;
@@ -171,7 +239,8 @@ footer{
     font-size: 40px;
     text-align: left;
     font-family: Titillium web, Bold;
-
+    margin-bottom: -50px;
+    margin-top: -10px;
 }
 .subtitulo4{
     color: #E20703;
@@ -189,10 +258,12 @@ footer{
  }
   h2{
     color: white;
-    margin-left: 5%;
+    margin-left: 4%;
     text-align: left;
     font-family: Roboto Condensed, Bold;
-    font-size: 55px;
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 .boton{
     text-decoration: none;
