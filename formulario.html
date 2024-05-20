@@ -1,12 +1,14 @@
 <html>
  <head>
-    <title> Pagina lol</title>
+    <title> Level Up </title>
     <meta charset="utf-8">
-    <meta name="description" content="Mi primera chamba">
+    <meta name="description" content="LevelUp">
     <meta name="languaje" content="es">
     <img src="./Imagenes/lup.png" alt="lup">
     <link rel="stylesheet" href="estilos.css">
  </head>
+
+ <section id="formulario">
 
  <head>
  <body>
@@ -14,18 +16,31 @@
     <p class="textform">Para recibir por correo electrónico las últimas novedades, actualizaciones y mucho más de tus videojuegos favoritos</p>
  </body>
  </head>
- 
- <head>
-   <div class="boton1">
-   <body>
-      <a href=" ./index.html">
-      <img src="./Imagenes/botonV.png" width="180px" height="50px"  alt="">
-   </a>
-      <a href="./formulario2.html">
-      <img src="./Imagenes/boton.png" width="180px" height="50px"  alt="">      
-      </a>
-   </body>
-</div>
-</head>
+
+
+ <body>
+   <form id="formulario">
+   <input type="email" name="email" id="email" placeholder="email" required="True">
+   <input type="text" name="nombre" id="nombre" placeholder="nombre" required="True">
+   <input type="namber" name="edad" id="edad" placeholder="edad" required="True">
+   <input type="submit" id="submit" value="Continuar" required="True" >
+</form>
+
+</section>
+
+<section class="feedback oculto" id="feedback">
+
+   
+   <h1>!Gracias por unirte!</h1>
+<p>!<span id="nombre-placeholder">NOMBRE</span> estamos emocionados de compartir contigo las últimas novedades del mundo del gaming!</p>
+<p>Ahora simplemente espera nuestras notificaciones a través de tu mail <span id="email-placeholder">EMAIL</span>  </p>
+
+
+</section> 
+
+<script src="./script.js"></script>
+</body>
+
+
 
 </html>
