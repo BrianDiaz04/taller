@@ -145,6 +145,7 @@ header{
     align-items: center;
     z-index: 100;
     padding: 20px;
+    margin-right: 10px;
 }
 .navbar a{
     position: relative;
@@ -155,7 +156,7 @@ header{
     margin-left: 40px;
 }
 .navbar a:hover{
-    color:#980A0A;
+    color:#ca0d0d;
 }
 
 .com{
@@ -362,8 +363,8 @@ footer{
 }
 .boton{
     text-decoration: none;
-    background-color: #980A0A;
-    padding: 5px 5px;
+    background-color:  #ca0d0d;
+    padding: 5px 20px;
     color: white;
     margin-left: 10%;
     text-align: left;
@@ -372,6 +373,11 @@ footer{
     font-size: 24px;
     border-radius: 5%;
 }
+/*.boton:hover{
+    -webkit-box-shadow: 0px 0px 63px 1px rgba(255,0,0,1);
+    -moz-box-shadow: 0px 0px 63px 1px rgba(255,0,0,1);
+    box-shadow: 0px 0px 63px 1px rgba(255,0,0,1);
+}*/
 h3{
     color: white;
     margin-left: 10%;
@@ -384,8 +390,6 @@ h3{
     margin-left: 55%;
     margin-right: 5%;
 }
-
-
 
 
 .formtit{
@@ -435,7 +439,6 @@ margin-top: 100px;
 }
 
 .feedback{
-    background-color:#E20703;
     color: #ffffff;
     padding: 20px;
     margin-top: 100px;
@@ -445,12 +448,56 @@ margin-top: 100px;
     display: none !important;
 }
  
+
+ 
 @media screen and (max-width: 600px) {
     html, body{
-        background-color: black;
+        background-color: #0B0C0E;
+        margin: 0px;
     }
-    img{
+    .grilla{
         width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 50px 50px;
+    }
+    .main{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .imagen1{
+        width: 100%; 
+        height: auto; 
+        max-width: 350px;
+        max-height: 710px; 
+    }
+    .Beneficios{
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .tarj2{
+        margin-left: 0%;
+    }
+    .com{
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .icon{
+        display: flex;
+        width: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        grid-area: icon-area;
     }
     
 }
