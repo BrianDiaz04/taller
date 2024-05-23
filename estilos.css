@@ -163,6 +163,10 @@ header{
     background-color: #980A0A;
     grid-area: com-area;
 }
+.com h2{
+    margin-top: 2%;
+    font-size: 50px;
+}
 /* Carrusel comentarios*/
 
 
@@ -457,26 +461,72 @@ margin-top: 100px;
     }
     .grilla{
         width: 100%;
-        height: 100vh;
+        height: auto;
         display: grid;
         grid-template-columns: 50px 50px;
+        grid-template-rows:50px 1300px 1000px 100px 550px 100px 440px 600px 100px;
     }
-    .main{
-        display: flex;
+    div.main{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: auto;
+        box-sizing: border-box;
+        justify-content: space-between;
+
+      }
+    .titulo1{
+        text-align: left;
+        width: 100%;
+        font-size: 64px;
+    }
+    .subtitulo1{
+        text-align: left;
+        width: 100%;
+    }
+    .subtitulo3{
+        margin-bottom: 700px;
+    }
+      div.portada-izquierda {
+        display: block;
         width: 100%;
         flex-direction: column;
-        justify-content: space-around;
+        align-items: left;
+        justify-content: space-between;
+      }
+    
+      div.portada-derecha {
+        display: flex;
+        height: auto;
+        width: 100%;
         align-items: center;
-    }
-    .imagen1{
+        margin-left: 0;
+        margin-top: 3rem;
+        justify-content: center;
+      }
+      .imagen1{
         width: 100%; 
         height: auto; 
-        max-width: 350px;
-        max-height: 710px; 
+        max-width: auto;
+        max-height: 1000px;
+        margin-top: -1700;
+    }
+    .boton{
+        text-decoration: none;
+        background-color:  #ca0d0d;
+        padding: 10px 75px;
+        color: white;
+        margin-left: 10%;
+        text-align: left;
+        font-family: titillium web;
+        font-style: bold;
+        font-size: 40px;
+        border-radius: 5%;
     }
     .Beneficios{
         display: flex;
-        width: auto;
+        width: 100%;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
