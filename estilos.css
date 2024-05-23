@@ -490,7 +490,6 @@ margin-top: 100px;
     }
       div.portada-izquierda {
         display: block;
-        width: 100%;
         flex-direction: column;
         align-items: left;
         justify-content: space-between;
