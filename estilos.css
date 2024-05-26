@@ -167,6 +167,13 @@ header{
     padding: 20px;
     margin-right: 10px;
 }
+.header2{
+    padding: 5px;
+    padding-inline: 20px;
+}
+.navbar{
+    display: flex;
+}
 .navbar a{
     position: relative;
     color: white;
@@ -178,7 +185,17 @@ header{
 .navbar a:hover{
     color:#ca0d0d;
 }
-
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+}
 .com{
     background-color: #980A0A;
     grid-area: com-area;
@@ -269,6 +286,8 @@ header{
     text-align: left;
 }
 .lv{
+    background-image: url(./Imagenes/vec2.png);
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -321,13 +340,40 @@ header{
     max-width: 910px; /* Tamaño máximo para la imagen */
     margin-top: -25%;
     align-self: flex-end;
-
 }
 footer{
     /*text-align: left;*/
     background-color: #101214;
     color:  white;
     grid-area: footer-area;
+}
+footer h3{
+    display: none;
+}
+.lf{
+    width: 150px;
+    margin-top: -20px;
+}
+footer ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 25%;
+    margin-left: 25%;
+}
+.redicon{
+    background-color: #090A0C;
+    border-radius: 50%;
+    width: 30px;
+    padding: 5px 5px;
+}
+footer h5{
+    color: #333333;
+    margin-left: 25%;
+    margin-right: auto;
+    text-align: left;
+    justify-content: center;
+    margin-top: -20px;
 }
  .titulo1{
     color: white;
@@ -477,7 +523,9 @@ h3{
     margin-top: 10px;
 margin-left: 1050px;
     }
-
+.boton4{
+    margin-left: 1600px;
+}
 input[type="submit"i]{
     background-color: #E20703;
     width:150px ;
@@ -577,6 +625,10 @@ input{
     margin-left: 60% ;   
     margin-top: -205px;
 }
+.lineform{
+    margin-top: -40px;
+    width: 50%;
+}
 /*CHECKBOX Y RADIOBUTTONS*/
 input[type="checkbox"]{
     display:none;
@@ -664,6 +716,18 @@ input[type="radio"]:checked + label::before{
     font-size: 24px;
     margin-top: 5px;
     margin-right: 20%;
+}
+.boton4{
+    text-decoration: none;
+    background-color:  #ca0d0d;
+    padding: 5px 20px;
+    color: white;
+    margin-left: 10%;
+    text-align: left;
+    font-family: titillium web;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 5%;
 }
 .botonV3{
     margin-top: 1px;
@@ -885,4 +949,216 @@ input[type="radio"]:checked + label::before{
         grid-area: icon-area;
     }
     
+
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        height: 150px;
+        width: 200px;
+        background-color: #090A0C;
+        position: absolute;
+        top: 100%;
+        left: 800px;
+    }
+    
+    .navbar a {
+        margin: 10px 0;
+    }
+    header img{
+        margin-right: 100px;
+        transform: scaleX(-1);
+    }
+    .menu-toggle {
+        display: flex;
+        justify-content: flex-start;
+        margin-right: 10;
+        
+    }
+
+    .navbar.active {
+        display: flex !important;
+        transform: scaleX(-1);
+    }
+ header{
+    transform: scaleX(-1);
+ }
+/*     Formulario    */
+ #formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.header2{
+    background-color: #0A0B0D;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    padding: 20px;
+    margin-right: 10px;
+}
+/*Pantalla1*/
+.lineform{
+    width:90% ;
+    margin-top: 0px;
+    margin-left: -50px;
+}
+.formtit{
+    font-size: 30px;
+    margin-left: 35px;
+    margin-right: auto;
+
+}
+.textform{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: auto;
+    padding-inline: 15px;
+}
+.posform{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:10px;
+}
+input[type="email"i]{
+    width: 350px ;
+    height:50px;
+    margin-bottom: 20px;
+}
+input[type="text"i]{
+    background-color: #ffffff;
+    width: 350px ;
+    height:50px;
+    color: #6d6363;
+    margin-bottom: 30px;
+    cursor: text;
+}
+input[type="namber"i]{
+    background-color: #ffffff;
+    width: 350px ;
+    height:50px;
+    color: #6d6363;
+    margin-bottom: 50px;
+    margin-left: 0px;
+    cursor: text;
+}
+input[type="submit"i]{
+    width:250px ;
+    font-size: 24px;
+    height:50px;
+    text-align: center;
+    padding: 5px 20px;
+    font-size: 24px;
+    margin-left: 0px;
+}
+.botones{
+    margin-top: 20px;
+}
+.botonV1{
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    padding: 4px 90px;
+    margin-right: auto;
+    border-radius: 5px;
+}
+/*Pantalla2*/
+.container{
+    margin: 10px;
+}
+.formtit2{
+    font-size: 30px;
+    margin-left: 30px;
+    margin-right: auto;
+}
+.checkbox2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin:10px;
+    margin-left: 20px;
+    margin-bottom: -50px;
+}
+.textform1{
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: auto;
+    padding-inline: 15px;
+}
+.radio{
+    margin-left: auto;
+    margin-right: auto;
+    padding-inline: 15px;
+}
+input[type="submit1"i]{
+    width:250px ;
+    font-size: 24px;
+    height:50px;
+    text-align: center;
+    padding: 5px 20px;
+    font-size: 24px;
+    margin-left: 0px;
+}
+.botones2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    align-items: center;
+}
+/*Pantalla3*/
+.feedback1{
+    margin-top: 50px;
+}
+.finaltext{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    margin-right: 0px;
+    margin-top: 0;
+}
+.finaltext h1{
+    font-size: 40px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.finaltext p{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: auto;
+    padding-inline: 15px;
+    margin-top: 25px;
+}
+.boton4{
+    display: flex;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 20px;
+    margin-right: auto;
+    border-radius: 5px;
+    justify-content: center;
+    margin-top: 30px;
+}
+.imgform3{
+    width: 200px;
+    height: 200px;
+    margin-right: auto;   
+    margin-left: auto;
+    margin-top: -50px;
+    }
+.ok{
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.botonV3{
+    margin-left: 0px;
+}
 }

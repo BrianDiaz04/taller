@@ -6,14 +6,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta name="languaje" content="es">
-    <img src="./Imagenes/lup.png" alt="lup">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
  </head>
+  <header class="header">
+   <img src="./Imagenes/lup.png" alt="LevelUp">
+   <nav class="navbar">
+       <a href="#"> Home </a>
+       <a href="#"> Noticias </a>
+       <a href="#"> Login </a>            
+   </nav>       
+   <div class="menu-toggle" id="mobile-menu">
+       <span class="bar"></span>
+       <span class="bar"></span>
+       <span class="bar"></span>
+   </div>
+</header> 
+<script src="./javascript/menu.js"></script>  
  <section id="formulario">
 
  <head>
  <body>
     <h1 class="formtit">Completa este formulario</h1>
+    <img class="lineform" src="./Imagenes/line.png" alt="line">
     <p class="textform">Para recibir por correo electrónico las últimas novedades, actualizaciones y mucho más de tus videojuegos favoritos</p>
    
    </body>
@@ -43,6 +58,7 @@
 <div class="container" id="informacion">
   
       <h1 class="formtit2"> ¿Que genero de juegos te gustan?</h1>
+      <img class="lineform" src="./Imagenes/line.png" alt="line">
       <p class="textform">Cuéntanos cuáles son tus géneros favoritos de videojuegos para poder darte información más personalizada</p>
   
       <div class="checkbox2">   
@@ -96,7 +112,7 @@
 
    <div class="imgform3">
 
-     <img src="./Imagenes/ok.png"  alt="">
+     <img class="ok" src="./Imagenes/ok.png"  alt="ok">
 </div>
 
 <div class="finaltext">
@@ -106,7 +122,7 @@
 </div>
 
 <div class="botonV3">   
-   <a class="boton" href="./index.html">Regresar</a>
+   <a class="boton4" href="./index.html">Regresar</a>
 </div>
 </section>
 
