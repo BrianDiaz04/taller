@@ -3,55 +3,112 @@
     <title> Level Up </title>
     <meta charset="utf-8">
     <meta name="description" content="LevelUp">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta name="languaje" content="es">
     <img src="./Imagenes/lup.png" alt="lup">
-    <link rel="stylesheet" href="./estilos.css">
+    <link rel="stylesheet" href="estilos.css">
  </head>
-
  <section id="formulario">
 
  <head>
  <body>
-    <h1 class="formtit"> Completa este formulario </h1>
+    <h1 class="formtit">Completa este formulario</h1>
     <p class="textform">Para recibir por correo electrónico las últimas novedades, actualizaciones y mucho más de tus videojuegos favoritos</p>
-    <a href="./index.html">
-      <img src="./Imagenes/botonV.png"width="180px" height="50px"  alt="">
-   </a> 
-
-   <a href="./formulario2.html">
-      <img src="./Imagenes/boton.png"width="180px" height="50px"  alt="">      
-      </a>
+   
    </body>
+   
  </head>
 
 
  <body>
+   <div class="posform">
    <form id="formulario">
-   <input type="email" name="email" id="email" placeholder="email" required="True">
-   <input type="text" name="nombre" id="nombre" placeholder="nombre" required="True">
-   <input type="namber" name="edad" id="edad" placeholder="edad" required="True">
+   <input type="email" name="email" id="email" placeholder="Correo electrónico" ><br>
+   <input type="text" name="nombre" id="nombre" placeholder="Nombre" >
+   <input type="namber" name="edad" id="edad" placeholder="Edad" ><br>
    <input type="submit" id="submit" value="Continuar" required="True" >
+   <!--poner  required="True" en cada uno -->
+   <div class="botones">
+      <a class="botonV1" href="./index.html">Volver</a>
+   </div>
+</div>
 </form>
 </section>
 
 <section class="feedback oculto" id="feedback">
 
+<!--comienzo de prueba -->
 
-   <h1>!Gracias por unirte!</h1>
-<p>!<span id="nombre-placeholder">NOMBRE</span> estamos emocionados de compartir contigo las últimas novedades del mundo del gaming!</p>
-<p>Ahora simplemente espera nuestras notificaciones a través de tu mail <span id="email-placeholder">EMAIL</span>  </p>
+<div class="container" id="informacion">
+  
+      <h1 class="formtit2"> ¿Que genero de juegos te gustan?</h1>
+      <p class="textform">Cuéntanos cuáles son tus géneros favoritos de videojuegos para poder darte información más personalizada</p>
+  
+      <div class="checkbox2">   
+          <form>
+         <input type="checkbox" name="Generos1" id="Generos1" required="True">
+          <label for="Generos1">Moba (Multiplayer online battle arena)</label> <br>
+         
+         <input type="checkbox" name="Generos2" id="Generos2" required="True">
+         <label for="Generos2">FPS (First person shooter)</label>  <br>
+                   
+         <input type="checkbox" name="Generos3" id="Generos3" required="True">
+         <label for="Generos3">Indie</label> <br>
+         
+         <input type="checkbox" name="Generos4" id="Generos4"id="Generos4" required="True">
+         <label for="Generos4">RPG (Role playing game)</label> <br>
+      </form>
+  
+      </div>
+  <br>
+  <br>
+  <br>
 
-<a href="./formulario.html">
-   <img src="./Imagenes/botonV.png"width="180px" height="50px"  alt="">      
-   </a>
+  <p class="textform1">¿Te gustaria recibir notificaciones de nuestras mejores y ultimas ofertas/descuentos? </p>
 
-   <a href="./formulario2.html">
-      <img src="./Imagenes/boton.png"width="180px" height="50px"  alt="">      
-      </a>
+  <div class="radio">
+         <input type="radio" name="Ofertas" id="Si" required="True">
+         <label for="Si"> Si</label>
+         <input type="radio" name="Ofertas" id="No" required="True">
+         <label for="No">No</label>
+      </div>
+      <div class="botones2">
+      <input type="submit1" id="submit1" value="Continuar" required="True" >
+      <div class="botones">
+         <a class="botonV1" href="./formulario.html">Volver</a>
+      </div>
+   </div>
+
+   </div>
+   </div>
+
+
+  </form>
+   </head>
+   <br>
+
+<!-- fin de prueba -->
 
 </section> 
 
+<section class="feedback1 oculto1" id="feedback1">
 
+   <div class="imgform3">
+
+     <img src="./Imagenes/ok.png"  alt="">
+</div>
+
+<div class="finaltext">
+   <h1>¡Gracias por unirte!</h1>
+<p>¡<span id="nombre-placeholder">NOMBRE</span> estamos emocionados de compartir contigo las últimas novedades del mundo del gaming!</p>
+<p>Ahora simplemente espera nuestras notificaciones a través de tu mail <span id="email-placeholder">EMAIL</span>  </p>
+</div>
+
+<div class="botonV3">   
+   <a class="boton" href="./index.html">Regresar</a>
+</div>
+</section>
 
 <script src="./javascript/formulario.js"></script>
 </body>
